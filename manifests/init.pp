@@ -42,7 +42,12 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class motd {
+class motd (
+$message = "Welcome to Pearson",
+) {
 
-
+file { '/etc/motd':
+	ensure  => 'file',
+	content => $message,
+	}
 }
