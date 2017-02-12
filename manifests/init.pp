@@ -43,7 +43,7 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class motd (
-$message = "Welcome to Pearson",
+$message = "Welcome to Pearson\n",
 ) {
 
 file { '/etc/motd':
